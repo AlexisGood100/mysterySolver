@@ -85,7 +85,7 @@ nextButton.addEventListener('click', ()=>{
     if(index === scenes.length){
         alert('You have finished the demo.')
         setTimeout(()=>{
-            window.location.href = '/'; // This will take the user to the homepage
+            window.location.href = 'https://alexisgood100.github.io/mysterySolver/'; // This will take the user to the homepage
         },1000);
         
     } else {
