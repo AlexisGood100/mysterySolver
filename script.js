@@ -42,9 +42,9 @@ const changeScenarios = (scenarioObject) =>{
 
 
 const firstScene = createScene('The Bloodied Parlor', './images/horrorScene1.jpg', 'A woman sits lifeless in her chair, eyes wide open. The scene is eerily undisturbed except for a broken glass on the table.', 0)
-const secondScene = createScene('The Silent Library','/images/horrorScene2.jpg','A scholar is found slumped over his desk, his final notes smudged with ink. The air smells of burnt paper.',1);
-const thirdScene = createScene('The Frozen Alleyway', '/images/horrorScene3.jpg', 'A man is found frozen stiff, his hands clutching his coat. No signs of struggle, yet his face is locked in terror.',1);
-const fourthScene = createScene('The Abandoned Cabin', '/images/horrorScene4.jpg', 'The victim lies by the fireplace, eyes wide open. A half-burnt note clenched in their hand.',1);
+const secondScene = createScene('The Silent Library','./images/horrorScene2.jpg','A scholar is found slumped over his desk, his final notes smudged with ink. The air smells of burnt paper.',1);
+const thirdScene = createScene('The Frozen Alleyway', './images/horrorScene3.jpg', 'A man is found frozen stiff, his hands clutching his coat. No signs of struggle, yet his face is locked in terror.',1);
+const fourthScene = createScene('The Abandoned Cabin', './images/horrorScene4.jpg', 'The victim lies by the fireplace, eyes wide open. A half-burnt note clenched in their hand.',1);
 
 
 const secondScenario = createScenarios('His research, set ablaze, took him with it.', 'A hidden gas leak silently ended his work.',
