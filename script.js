@@ -149,7 +149,7 @@ setInterval(() => {
     if (Math.random() > 0.5) { // 50% chance of triggering
         applyDistortionEffect();
     }
-}, Math.random() * (4000 - 2000) + 500); // Between 2 to 5 seconds
+}, Math.random() * (5000 - 2000) + 1000); // Between 2 to 5 seconds
 
 
 
