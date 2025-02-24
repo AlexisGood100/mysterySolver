@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Decisions</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    </style>
+</head>
+<body>
+
+    <div class="creepy-overlay hide" id="creepy-overlay">
+        <img id="creepy-img" alt="Creepy Image">
+    </div>
+    
+
+    <div class="container-instructions container">
+<h1>Mystery Solver - Horror</h1>
+<p>The instructions are simple.</p>
+<p>Look at the title, image, and description of the scene.</p>
+<p>Click the 'Pick Method of Crime' button when you are ready to guess what happened.</p>
+<p>If you are correct, you will be allowed to proceed to the next level.</p>
+<button class="btn-start-game">Start Game</button>
+    </div>
+
+
+    <div class="container hide container-scene">
+        <h1 class="scene-title">0</h1>
+        <img class="scene-img" alt="Crime Scene">
+        <p class="crime-description">0</p>
+        <button onclick="showOverlay()">Pick Method of Crime</button>
+    </div>
+    
+    <div class="overlay hide" id="overlay">
+
+        <h2>Choose the Method of Crime</h2>
+
+        <div class="scenario scenario-1">
+            <h3 class="scenario-1-title"></h3>
+            <p class="scenario-1-description"></p>
+        </div>
+
+        <div class="scenario scenario-2">
+            <h3 class="scenario-2-title"></h3>
+            <p class="scenario-2-description"></p>
+        </div>
+
+        <div class="scenario scenario-3">
+            <h3 class="scenario-3-title"></h3>
+            <p class="scenario-3-description"></p>
+        </div>
+
+        <button class="btn-next-scene hide">Next Scene</button>
+    </div>
+
+    <script>
+        function showOverlay() {
+            document.getElementById('overlay').classList.remove('hide');
+        };
+
+      
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

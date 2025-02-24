@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background for the horror theme */
+    color: #e6e6e6; /* Light text for better contrast */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Creepster', cursive; /* Spooky font for headers */
+    color: #d9534f; /* Blood red color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Shadow effect for text */
+}
+
+.crime-description {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #f2f2f2; /* Slightly lighter text for description */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Shadow for description */
+}
+
+img {
+    width: 50%;
+    max-width: 600px;
+    height: 20%;
+    box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.7); /* Bloody red glow around images */
+    border: 5px solid #d9534f; /* Blood red border around images */
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Darker background with more opacity */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.overlay h2 {
+    font-size: 2em;
+    font-family: 'Creepster', cursive;
+    color: #d9534f;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+.scenario {
+    background: #222;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid #d9534f;
+    color: #f2f2f2;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.scenario:hover {
+    background: #d9534f;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+}
+
+.btn-start-game, .btn-next-scene {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-start-game:hover, .btn-next-scene:hover {
+    background-color: #a94442;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes glitch {
+    0% { transform: skew(5deg, 2deg) scale(1.02); filter: blur(3px) hue-rotate(10deg); }
+    25% { transform: skew(-3deg, -1deg) scale(1.03); filter: contrast(1.5) brightness(1.2); }
+    50% { transform: skew(8deg, 4deg) scale(1.01); filter: blur(2px) grayscale(0.3); }
+    75% { transform: skew(-5deg, -3deg) scale(1.04); filter: contrast(2) brightness(0.9); }
+    100% { transform: skew(0) scale(1); filter: none; }
+}
+
+body.distorted {
+    animation: glitch 0.2s infinite alternate;
+}
+
+/* Add some blood splatter effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/blood-splatters.png');
+    background-repeat: repeat;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.container-instructions {
+    margin-top: 20px;
+}
+
+.container-scene {
+    margin-top: 30px;
+}
+
+.container-scene h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.container-scene img {
+    max-width: 80%;
+}
+
+.container-scene .btn-start-game {
+    background-color: #d9534f;
+    border: none;
+    padding: 15px;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.container-scene .btn-start-game:hover {
+    background-color: #a94442;
+}
+
+
+
+
+.creepy-overlay {
+    display: none;  /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index:100;
+}
+
+.creepy-overlay img {
+    height: 100%;  /* Adjust as needed */
+    width:100%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
